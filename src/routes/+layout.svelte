@@ -25,12 +25,14 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<nav class="flex justify-between p-4">
-			<a href="/" class="h1 font-bold italic">logo</a>
-			<div class="flex gap-8 font-semibold my-auto h4">
-				<a href="/pricing">Pricing</a>
-				<a href="/pricing">Features</a>
+			<a href="/" class="btn h1 font-bold italic">logo</a>
+			<div class="flex gap-8 font-semibold my-auto">
+				<a class="btn h4" href="/pricing">Pricing</a>
+				<a class="btn h4" href="/pricing">Features</a>
 			</div>
-			<a href="https://app.taskforge.com" class="btn variant-ringed-primary font-bold">Dashboard</a>
+			<a href="https://app.taskforge.com" class="btn variant-ringed-primary font-bold my-auto"
+				>Dashboard</a
+			>
 		</nav>
 	</svelte:fragment>
 	<slot />
