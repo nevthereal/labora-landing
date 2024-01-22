@@ -27,8 +27,8 @@
 		<nav class="flex justify-between p-4">
 			<a href="/" class="btn h1 font-bold italic">logo</a>
 			<div class="flex gap-8 font-semibold my-auto">
-				<a class="btn h4" href="/pricing">Pricing</a>
-				<a class="btn h4" href="/pricing">Features</a>
+				<a class="btn h5" href="/pricing">Pricing</a>
+				<a class="btn h5" href="/pricing">Features</a>
 			</div>
 			<a href="https://app.taskforge.com" class="btn variant-ringed-primary font-bold my-auto"
 				>Dashboard</a
