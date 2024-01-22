@@ -30,7 +30,7 @@
 				<a class="btn h5" href="/pricing">Pricing</a>
 				<a class="btn h5" href="/pricing">Features</a>
 			</div>
-			<a href="https://app.taskforge.com" class="btn variant-ringed-primary font-bold my-auto"
+			<a href="https://app.taskforge.com" class="btn variant-ghost-primary font-bold my-auto"
 				>Dashboard</a
 			>
 		</nav>

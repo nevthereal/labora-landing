@@ -4,7 +4,7 @@
 
 <div class="w-screen h-[80dvh] flex justify-center text-center items-center">
 	<div class="flex flex-col gap-4">
-		<h1 class="text-7xl font-black hover:tracking-widest duration-200 ease-in-out">TaskForge:</h1>
+		<h1 class="text-7xl font-black hover:tracking-widest duration-200 ease-in-out">TaskForge</h1>
 		<div class="flex flex-col group">
 			<Todo
 				classes="mx-auto"
