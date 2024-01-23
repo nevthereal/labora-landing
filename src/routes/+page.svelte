@@ -2,17 +2,16 @@
 	import Todo from '$lib/components/Todo.svelte';
 
 	let completed: boolean;
-	$: console.log(completed);
 </script>
 
 <div class="w-screen h-[80dvh] flex justify-center text-center items-center">
 	<div class="flex flex-col gap-4">
-		<h1 class="text-7xl font-black hover:tracking-widest duration-200 ease-in-out">TaskForge</h1>
+		<h1 class="text-7xl font-black hover:tracking-widest duration-200 ease-in-out">Laborium</h1>
 		<div class="group relative mx-auto">
 			<div
-				class={`absolute z-10 top-10 text-2xl -left-24 font-bold duration-200 ease-in-out opacity-0 ${!completed ? 'md:group-hover:opacity-100' : ''}`}
+				class={`flex gap-2 absolute z-10 top-12 text-2xl -left-24 font-bold duration-200 ease-in-out opacity-0 ${!completed ? 'md:group-hover:opacity-100' : ''}`}
 			>
-				Click me <i class="fa-solid fa-hand-pointer rotate-45"></i>
+				<span>Click me</span><i class="fa-solid fa-hand-pointer rotate-45"></i>
 			</div>
 			<Todo
 				bind:iconState={completed}
