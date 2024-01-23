@@ -1,18 +1,18 @@
 <script lang="ts">
-	export let classes: string;
+	export let classes: string = '';
 	export let body: string;
-	export let iconState = false;
+	export let completed = false;
 
 	const toggleIcon = () => {
-		iconState = !iconState;
+		completed = !completed;
 	};
 </script>
 
-<li class={`flex card justify-between p-4 items-center ${classes}`}>
+<li class={`flex card p-4 items-center pr-9 ${classes}`}>
 	<button class="btn" on:click={() => toggleIcon()}
-		><i class={`${!iconState ? 'fa-regular' : 'fa-solid'} fa-circle-check text-2xl`}></i></button
+		><i class={`${!completed ? 'fa-regular' : 'fa-solid'} fa-circle-check text-2xl`}></i></button
 	>
-	<p class={`font-bold text-2xl ${iconState ? 'line-through' : ''}`}>
+	<p class={`font-bold text-2xl ${completed ? 'line-through' : ''}`}>
 		{@html body}
 	</p>
 </li>
