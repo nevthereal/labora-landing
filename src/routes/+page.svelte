@@ -1,9 +1,17 @@
 <script lang="ts">
-	import Space from '$lib/components/Space.svelte';
+	import SpaceCard from '$lib/components/SpaceCard.svelte';
 	import Todo from '$lib/components/Todo.svelte';
 
 	let completed: boolean;
 </script>
+
+<svelte:head>
+	<title>Labora</title>
+	<meta
+		name="description"
+		content="A powerful todo application that keeps you productive and focused"
+	/>
+</svelte:head>
 
 <div class="w-screen h-[90dvh] flex justify-center text-center items-center">
 	<div class="flex flex-col gap-4">
@@ -75,7 +83,7 @@
 			</p>
 		</div>
 		<div class="m-8">
-			<Space title="This is a space" desc="A place for your todos." openTodos={3} />
+			<SpaceCard title="This is a space" desc="A place for your todos." openTodos={3} />
 		</div>
 	</section>
 </main>
