@@ -36,4 +36,42 @@
 		</nav>
 	</svelte:fragment>
 	<slot />
+	<svelte:fragment slot="footer">
+		<footer class="grid grid-flow-col p-8">
+			<div class="m-auto flex flex-col">
+				<h1 class="h1 font-black">Labora</h1>
+				<p class="italic font-semibold">Stay focused.</p>
+			</div>
+			<div class="m-auto flex gap-12">
+				<div>
+					<h4 class="h4 font-semibold">Legal</h4>
+					<ul>
+						<li class="text-surface-200"><a href="/terms">Terms and Conditions</a></li>
+						<li class="text-surface-200"><a href="/privacy-policy">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="h4 font-semibold">Product</h4>
+					<ul>
+						<li class="text-surface-200">
+							<a target="_blank" href="https://dashboard.labora.cloud">Dashboard</a>
+						</li>
+						<li class="text-surface-200"><a href="/pricing">Pricing</a></li>
+						<li class="text-surface-200"><a href="/features">Features</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="h4 font-semibold">Developer</h4>
+					<ul>
+						<li class="text-surface-200">
+							<a target="_blank" href="https://github.com/nevthereal/labora">Open Source</a>
+						</li>
+						<li class="text-surface-200">
+							<a target="_blank" href="https://x.com/BremNeville">Neville Brem</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</svelte:fragment>
 </AppShell>

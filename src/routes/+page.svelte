@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SpaceCard from '$lib/components/SpaceCard.svelte';
 	import Todo from '$lib/components/Todo.svelte';
+	import { Ratings } from '@skeletonlabs/skeleton';
 
 	let completed: boolean;
 </script>
@@ -58,7 +59,7 @@
 
 	<section class="grid grid-cols-2">
 		<div class="flex justify-center items-center">
-			<h1 class="h1 font-bold">It's simple:</h1>
+			<h1 class="h1 font-black">It's simple:</h1>
 		</div>
 		<div class="p-16 flex">
 			<div class="m-auto flex flex-col gap-4">
@@ -77,13 +78,39 @@
 
 	<section class="grid grid-cols-2">
 		<div class="m-16">
-			<p class="text-lg">
+			<SpaceCard title="This is a space" desc="A place for your todos." openTodos={3} />
+		</div>
+		<div class="m-24">
+			<p class="text-xl">
 				We keep you organized with using <span class="gradient-text">Spaces</span>. Spaces are like
 				little containers which carry tasks.
 			</p>
 		</div>
-		<div class="m-8">
-			<SpaceCard title="This is a space" desc="A place for your todos." openTodos={3} />
+	</section>
+	<section class="md:max-w-[60%] mx-auto my-16">
+		<h1 class="h1 font-bold">Let's summarize:</h1>
+		<div class="grid grid-cols-3 gap-4 my-8">
+			<div class="bento-box col-span-2">
+				<h1 class="h1 font-black mx-auto gradient-text">Web-Based</h1>
+				<p class="mx-auto text-xl">Accessible for everyone</p>
+			</div>
+			<div class="bento-box">
+				<h1 class="h1 font-black mx-auto gradient-text">0</h1>
+				<p class="mx-auto text-xl">Years of experience*</p>
+			</div>
+			<div class="col-span-3 grid grid-cols-2 gap-4">
+				<div class="bento-box">
+					<h2 class="h2 font-bold gradient-text m-auto">Stay organized</h2>
+					<p class="m-auto">
+						Thanks to the implementation of <span class="gradient-text">spaces</span>
+					</p>
+				</div>
+				<div class="bento-box">
+					<h2 class="h2 font-bold gradient-text m-auto">Stay Happy</h2>
+					<p class="m-auto">With daily habits</p>
+				</div>
+			</div>
 		</div>
+		<p>*yet</p>
 	</section>
 </main>
