@@ -1,5 +1,7 @@
 <script lang="ts">
-	export let classes: string = '';
+	import type { CssClasses } from '@skeletonlabs/skeleton';
+
+	export let classes: CssClasses = '';
 	export let body: string;
 	export let completed = false;
 

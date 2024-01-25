@@ -1,9 +1,11 @@
 <script lang="ts">
+	import type { CssClasses } from '@skeletonlabs/skeleton';
+
 	export let title: string;
 	export let desc: string;
 	export let openTodos: number;
 	export let icon: string = 'fa-solid fa-rocket';
-	export let classes = '';
+	export let classes: CssClasses = '';
 </script>
 
 <div class={`card p-8 hover:bg-surface-700 duration-200 ease-in-out group ${classes}`}>

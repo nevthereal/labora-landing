@@ -115,6 +115,7 @@
 		"track",
 		"transition",
 		"width",
-		"zIndex"
+		"zIndex",
+		"classes"
 	]
 }

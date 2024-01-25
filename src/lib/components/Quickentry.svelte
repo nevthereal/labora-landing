@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	import { getModalStore } from '@skeletonlabs/skeleton';
+	import { getModalStore, type CssClasses } from '@skeletonlabs/skeleton';
+
+	export let classes: CssClasses = '';
 
 	const modalStore = getModalStore();
 </script>
 
-<div class="card p-16">
+<div class={`card p-16 ${classes}`}>
 	<div class="flex gap-4 mb-6">
 		<i class="fa-solid fa-square-plus text-2xl md:text-4xl"></i>
 		<h2 class="h2 font-bold">Create a quick entry</h2>
