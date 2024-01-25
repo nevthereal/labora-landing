@@ -82,10 +82,13 @@
 				icon="fa-solid fa-code"
 			/>
 		</div>
-		<div class="flex">
-			<p class="text-xl m-auto w-[60%]">
+		<div class="flex flex-col m-auto max-w-[90%] xl:max-w-[60%] gap-4">
+			<p class="text-xl">
 				We keep you organized with using <span class="gradient-text">Spaces</span>. Spaces are like
 				little containers which carry tasks.
+			</p>
+			<p class="text-xl">
+				For creating quick entries, press <kbd class="kbd">ctrl + E</kbd>
 			</p>
 		</div>
 	</section>
@@ -115,7 +118,7 @@
 			</div>
 			<div class="bento-box">
 				<h2 class="h2 font-bold gradient-text m-auto">Affordable</h2>
-				<p class="m-auto">Giving you a generous free tier</p>
+				<p class="m-auto">Giving you a <a class="anchor" href="/pricing">generous free tier</a></p>
 			</div>
 			<div class="col-span-2 bento-box">
 				<h1 class="h1 font-bold gradient-text m-auto">Get it done</h1>
@@ -139,7 +142,7 @@
 					<label for="how">How did you hear from us?</label>
 					<select name="how" class="select">
 						<option value="yt">YouTube</option>
-						<option value="tw">Twitter</option>
+						<option value="x">X (Twitter)</option>
 						<option value="friend">A friend</option>
 						<option value="other">Other</option>
 					</select>

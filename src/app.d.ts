@@ -7,3 +7,10 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+declare interface PricingTier {
+	name: string;
+	price: number | 'Free';
+	cloud: boolean;
+	spaces: number | 'Unlimited';
+}
