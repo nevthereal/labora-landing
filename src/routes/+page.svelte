@@ -40,7 +40,7 @@
 </div>
 <main>
 	<!-- About -->
-	<section class="grid grid-cols-2" id="about">
+	<section class="grid grid-cols-1 xl:grid-cols-2" id="about">
 		<div class="p-16">
 			<p class="text-lg">
 				"Labora" is a latin imperative which means "work hard!" in English. <span
@@ -57,7 +57,7 @@
 		</div>
 	</section>
 
-	<section class="grid grid-cols-2">
+	<section class="grid grid-cols-1 xl:grid-cols-2">
 		<div class="flex justify-center items-center">
 			<h1 class="h1 font-black">It's simple:</h1>
 		</div>
@@ -76,7 +76,7 @@
 		</div>
 	</section>
 
-	<section class="grid grid-cols-2">
+	<section class="grid grid-cols-1 xl:grid-cols-2">
 		<div class="m-16">
 			<SpaceCard title="This is a space" desc="A place for your todos." openTodos={3} />
 		</div>
@@ -87,9 +87,10 @@
 			</p>
 		</div>
 	</section>
-	<section class="md:max-w-[60%] mx-auto my-16">
+
+	<section class="xl:max-w-[60%] max-w-[90%] mx-auto my-16">
 		<h1 class="h1 font-bold">Let's summarize:</h1>
-		<div class="grid grid-cols-3 gap-4 my-8">
+		<div class="grid grid-cols-1 xl:grid-cols-3 gap-4 my-8">
 			<div class="bento-box col-span-2">
 				<h1 class="h1 font-black mx-auto gradient-text">Web-Based</h1>
 				<p class="mx-auto text-xl">Accessible for everyone</p>
