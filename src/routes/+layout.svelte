@@ -1,5 +1,11 @@
 <script lang="ts">
 	import '../app.postcss';
+	import {
+		getModalStore,
+		initializeStores,
+		Modal,
+		type ModalSettings
+	} from '@skeletonlabs/skeleton';
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -19,9 +25,29 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';
+	import Quickentry from '$lib/components/Quickentry.svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	initializeStores();
+
+	const modalStore = getModalStore();
+
+	const quickentry: ModalSettings = {
+		type: 'component',
+		component: { ref: Quickentry, props: { parent: 'Homepage' } }
+	};
+
+	onMount(() => {
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && e.key === 'e') {
+				modalStore.trigger(quickentry);
+			}
+		});
+	});
 </script>
 
+<Modal />
 <AppShell>
 	<svelte:fragment slot="header">
 		<nav class="flex justify-between p-4">

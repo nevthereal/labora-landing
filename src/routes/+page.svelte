@@ -1,7 +1,6 @@
 <script lang="ts">
 	import SpaceCard from '$lib/components/SpaceCard.svelte';
 	import Todo from '$lib/components/Todo.svelte';
-	import { Ratings } from '@skeletonlabs/skeleton';
 
 	let completed: boolean;
 </script>
@@ -41,8 +40,8 @@
 <main>
 	<!-- About -->
 	<section class="grid grid-cols-1 xl:grid-cols-2" id="about">
-		<div class="p-16">
-			<p class="text-lg">
+		<div class="flex justify-center">
+			<p class="text-lg w-[60%] my-auto">
 				"Labora" is a latin imperative which means "work hard!" in English. <span
 					class="font-bold gradient-text">Labora</span
 				> is meant to keep you productive and organized. Our goal is to get productive work accessible
@@ -57,10 +56,7 @@
 		</div>
 	</section>
 
-	<section class="grid grid-cols-1 xl:grid-cols-2">
-		<div class="flex justify-center items-center">
-			<h1 class="h1 font-black">It's simple:</h1>
-		</div>
+	<section class="my-16">
 		<div class="p-16 flex">
 			<div class="m-auto flex flex-col gap-4">
 				<h1 class="h2 font-bold">
@@ -77,11 +73,17 @@
 	</section>
 
 	<section class="grid grid-cols-1 xl:grid-cols-2">
-		<div class="m-16">
-			<SpaceCard title="This is a space" desc="A place for your todos." openTodos={3} />
+		<div class="m-16 flex flex-col gap-4">
+			<SpaceCard title="School" desc="This is a space." openTodos={3} icon="fa-solid fa-school" />
+			<SpaceCard
+				title="Development"
+				desc="A place for your tasks."
+				openTodos={5}
+				icon="fa-solid fa-code"
+			/>
 		</div>
-		<div class="m-24">
-			<p class="text-xl">
+		<div class="flex">
+			<p class="text-xl m-auto w-[60%]">
 				We keep you organized with using <span class="gradient-text">Spaces</span>. Spaces are like
 				little containers which carry tasks.
 			</p>
@@ -103,13 +105,23 @@
 				<div class="bento-box">
 					<h2 class="h2 font-bold gradient-text m-auto">Stay organized</h2>
 					<p class="m-auto">
-						Thanks to the implementation of <span class="gradient-text">spaces</span>
+						Stay in focus thanks to <span class="gradient-text">spaces</span>
 					</p>
 				</div>
 				<div class="bento-box">
 					<h2 class="h2 font-bold gradient-text m-auto">Stay Happy</h2>
 					<p class="m-auto">With daily habits</p>
 				</div>
+			</div>
+			<div class="bento-box">
+				<h2 class="h2 font-bold gradient-text m-auto">Affordable</h2>
+				<p class="m-auto">Giving you a generous free tier</p>
+			</div>
+			<div class="col-span-2 bento-box">
+				<h1 class="h1 font-bold gradient-text m-auto">Get it done</h1>
+				<p class="m-auto text-lg">
+					For a quick entry just press <kbd class="kbd">ctrl</kbd> + <kbd class="kbd">E</kbd>
+				</p>
 			</div>
 		</div>
 		<p>*yet</p>
