@@ -120,10 +120,32 @@
 			<div class="col-span-2 bento-box">
 				<h1 class="h1 font-bold gradient-text m-auto">Get it done</h1>
 				<p class="m-auto text-lg">
-					For a quick entry just press <kbd class="kbd">ctrl</kbd> + <kbd class="kbd">E</kbd>
+					For a quick entry just press <kbd class="kbd">ctrl + E</kbd>
 				</p>
 			</div>
 		</div>
 		<p>*yet</p>
+	</section>
+
+	<section class="my-8 flex justify-center">
+		<div class="card p-12">
+			<h2 class="h2 font-bold mb-4">Sign up for our newsletter</h2>
+			<div class="flex flex-col gap-4">
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="email" class="input" />
+				</div>
+				<div>
+					<label for="how">How did you hear from us?</label>
+					<select name="how" class="select">
+						<option value="yt">YouTube</option>
+						<option value="tw">Twitter</option>
+						<option value="friend">A friend</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<button class="btn variant-ghost-primary mx-auto">Sign Up!</button>
+			</div>
+		</div>
 	</section>
 </main>

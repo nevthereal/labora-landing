@@ -18,7 +18,7 @@
 			<p class="text-xl">{desc}</p>
 			<p class="italic text-surface-200">{openTodos} open todos</p>
 		</div>
-		<button class="btn variant-ghost-surface mb-auto aspect-square">
+		<button class="chip variant-ghost-surface mb-auto aspect-square">
 			<i class="fa-solid fa-gear text-lg group-hover:rotate-45 duration-200 ease-in-out"></i>
 		</button>
 	</div>
