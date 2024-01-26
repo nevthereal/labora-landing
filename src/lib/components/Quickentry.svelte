@@ -20,6 +20,15 @@
 			<label for="desc">Additional details (optional)</label>
 			<input class="input" type="text" name="desc" />
 		</div>
+		<div>
+			<label for="space">Space</label>
+			<select name="space" class="select">
+				<option value="inbox">Inbox</option>
+				<option value="school">School</option>
+				<option value="dev">Development</option>
+				<option value="new">+ New Space</option>
+			</select>
+		</div>
 		<button class="btn variant-ghost-primary mx-auto">Add</button>
 	</form>
 </div>
