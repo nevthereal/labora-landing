@@ -118,7 +118,9 @@
 			</div>
 			<div class="bento-box">
 				<h2 class="h2 font-bold gradient-text m-auto">Affordable</h2>
-				<p class="m-auto">Giving you a <a class="anchor" href="/pricing">generous free tier</a></p>
+				<p class="m-auto">
+					Giving you a <a class="font-bold gradient-text" href="/pricing">generous free tier</a>
+				</p>
 			</div>
 			<div class="col-span-2 bento-box">
 				<h1 class="h1 font-bold gradient-text m-auto">Get it done</h1>
