@@ -8,18 +8,18 @@
 	export let classes: CssClasses = '';
 </script>
 
-<div class={`card p-8 hover:bg-surface-700 duration-200 ease-in-out group ${classes}`}>
-	<div class="flex gap-2 justify-between">
+<div class={`group card p-8 duration-200 ease-in-out hover:bg-surface-700 ${classes}`}>
+	<div class="flex justify-between gap-2">
 		<div class="flex flex-col gap-2">
-			<h1 class="h1 font-black flex gap-4">
-				<i class={`text-2xl md:text-4xl text-surface-200 my-auto ${icon}`}></i>
+			<h1 class="h1 flex gap-4 font-black">
+				<i class={`my-auto text-2xl text-surface-200 md:text-4xl ${icon}`}></i>
 				{title}
 			</h1>
 			<p class="text-xl">{desc}</p>
 			<p class="italic text-surface-200">{openTodos} open todos</p>
 		</div>
-		<button class="chip variant-ghost-surface mb-auto aspect-square">
-			<i class="fa-solid fa-gear text-lg group-hover:rotate-45 duration-200 ease-in-out"></i>
+		<button class="variant-ghost-surface chip mb-auto aspect-square">
+			<i class="fa-solid fa-gear text-lg duration-200 ease-in-out group-hover:rotate-45"></i>
 		</button>
 	</div>
 </div>

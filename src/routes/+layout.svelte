@@ -51,12 +51,12 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<nav class="flex justify-between p-4">
-			<a href="/" class="btn h1 font-bold italic">logo</a>
-			<div class="flex gap-8 font-semibold my-auto">
-				<a class="btn h5" href="/pricing">Pricing</a>
-				<a class="btn h5" href="/pricing">Features</a>
+			<a href="/" class="h1 btn font-bold italic">logo</a>
+			<div class="my-auto flex gap-8 font-semibold">
+				<a class="h5 btn" href="/pricing">Pricing</a>
+				<a class="h5 btn" href="/pricing">Features</a>
 			</div>
-			<a href="https://app.taskforge.com" class="btn variant-ghost-primary font-bold my-auto"
+			<a href="https://app.taskforge.com" class="variant-ghost-primary btn my-auto font-bold"
 				>Dashboard</a
 			>
 		</nav>
@@ -66,7 +66,7 @@
 		<footer class="grid grid-flow-col p-8">
 			<div class="m-auto flex flex-col">
 				<h1 class="h1 font-black">Labora</h1>
-				<p class="italic font-semibold">Stay focused.</p>
+				<p class="font-semibold italic">Stay focused.</p>
 			</div>
 			<div class="m-auto flex gap-12">
 				<div>
