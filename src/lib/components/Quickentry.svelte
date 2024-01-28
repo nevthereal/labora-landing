@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getModalStore, type CssClasses } from '@skeletonlabs/skeleton';
+	import Calendar from '$lib/components/Calendar.svelte';
 
 	export let classes: CssClasses = '';
 
@@ -7,6 +8,7 @@
 </script>
 
 <div class={`card p-16 ${classes}`}>
+	<Calendar />
 	<div class="mb-6 flex gap-4">
 		<i class="fa-solid fa-square-plus text-2xl md:text-4xl"></i>
 		<h2 class="h2 font-bold">Create a quick entry</h2>

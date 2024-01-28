@@ -47,6 +47,7 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "1.5.4",
+		"bits-ui": "^0.15.1",
 		"highlight.js": "11.9.0"
 	}
 }
