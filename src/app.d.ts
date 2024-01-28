@@ -10,7 +10,6 @@ declare namespace App {
 
 declare interface PricingTier {
 	name: string;
-	price: number | 'Free';
-	cloud: boolean;
+	price: number;
 	spaces: number | 'Unlimited';
 }

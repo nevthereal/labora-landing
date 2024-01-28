@@ -106,24 +106,24 @@
 			</div>
 			<div class="col-span-3 grid grid-cols-2 gap-4">
 				<div class="bento-box">
-					<h2 class="gradient-text h2 m-auto font-bold">Stay organized</h2>
+					<h2 class="gradient-text h2 m-auto font-black">Stay organized</h2>
 					<p class="m-auto">
 						Stay in focus thanks to <span class="gradient-text">spaces</span>
 					</p>
 				</div>
 				<div class="bento-box">
-					<h2 class="gradient-text h2 m-auto font-bold">Stay Happy</h2>
+					<h2 class="gradient-text h2 m-auto font-black">Stay Happy</h2>
 					<p class="m-auto">With daily habits</p>
 				</div>
 			</div>
 			<div class="bento-box">
-				<h2 class="gradient-text h2 m-auto font-bold">Affordable</h2>
+				<h2 class="gradient-text h2 m-auto font-black">Affordable</h2>
 				<p class="m-auto">
 					Giving you a <a class="gradient-text font-bold" href="/pricing">generous free tier</a>
 				</p>
 			</div>
 			<div class="bento-box col-span-2">
-				<h1 class="gradient-text h1 m-auto font-bold">Get it done</h1>
+				<h1 class="gradient-text h1 m-auto font-black">Get it done</h1>
 				<p class="m-auto text-lg">
 					For a quick entry just press <kbd class="kbd">ctrl + E</kbd>
 				</p>
@@ -134,7 +134,9 @@
 
 	<section class="my-8 flex justify-center">
 		<div class="card p-12">
-			<h2 class="h2 mb-4 font-bold">Sign up for our newsletter</h2>
+			<h2 class="h2 mb-4 font-bold">
+				Sign up for our <span class="gradient-text">newsletter</span>
+			</h2>
 			<div class="flex flex-col gap-4">
 				<div>
 					<label for="email">Email</label>
