@@ -6,7 +6,6 @@
 
 	const modalStore = getModalStore();
 	let selectedDate: string | undefined;
-	$: console.log(selectedDate);
 </script>
 
 <div class={`card p-16 ${classes}`}>
@@ -24,6 +23,11 @@
 			<input class="input" type="text" name="desc" />
 		</div>
 		<Calendar bind:selectedDate />
+		{#if selectedDate}
+			<span>Due at <span class="font-medium">{selectedDate}</span></span>
+		{:else}
+			<span class="font-semibold">Select a date</span>
+		{/if}
 		<div>
 			<label for="space">Space</label>
 			<select name="space" class="select">
