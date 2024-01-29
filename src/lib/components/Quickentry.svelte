@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { getModalStore, type CssClasses } from '@skeletonlabs/skeleton';
-	import Calendar from '$lib/components/Calendar.svelte';
+	import Calendar from './Calendar.svelte';
 
 	export let classes: CssClasses = '';
 
 	const modalStore = getModalStore();
-	let selectedDate: any;
+	let selectedDate: string | undefined;
+	$: console.log(selectedDate);
 </script>
 
 <div class={`card p-16 ${classes}`}>
@@ -22,7 +23,7 @@
 			<label for="desc">Additional details (optional)</label>
 			<input class="input" type="text" name="desc" />
 		</div>
-		<Calendar bind:value={selectedDate} />
+		<Calendar bind:selectedDate />
 		<div>
 			<label for="space">Space</label>
 			<select name="space" class="select">

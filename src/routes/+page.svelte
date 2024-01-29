@@ -131,7 +131,6 @@
 		</div>
 		<p>*yet</p>
 	</section>
-
 	<section class="my-8 flex justify-center">
 		<div class="card p-12">
 			<h2 class="h2 mb-4 font-bold">
