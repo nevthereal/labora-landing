@@ -5,10 +5,10 @@
 	export let classes: CssClasses = '';
 
 	const modalStore = getModalStore();
+	let selectedDate: any;
 </script>
 
 <div class={`card p-16 ${classes}`}>
-	<Calendar />
 	<div class="mb-6 flex gap-4">
 		<i class="fa-solid fa-square-plus text-2xl md:text-4xl"></i>
 		<h2 class="h2 font-bold">Create a quick entry</h2>
@@ -22,6 +22,7 @@
 			<label for="desc">Additional details (optional)</label>
 			<input class="input" type="text" name="desc" />
 		</div>
+		<Calendar bind:value={selectedDate} />
 		<div>
 			<label for="space">Space</label>
 			<select name="space" class="select">
